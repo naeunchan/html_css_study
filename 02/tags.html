@@ -1,78 +1,143 @@
-<h1>HTML</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./02.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML</h1>
 
-<h2>Head tag</h2>
+    <h2>Head tag</h2>
 
-<p>Lorem Ipsum</p>
-<br />
-<hr />
-<blockquote>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-  type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-  also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-  the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-  with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</blockquote>
-<hr />
-
-<h3>Pre tag usage</h3>
-<pre>
+    <p>Lorem Ipsum</p>
+    <br />
+    <hr />
+    <blockquote>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+      galley of type and scrambled it to make a type specimen book. It has survived not only five
+      centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+      was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+      passages, and more recently with desktop publishing software like Aldus PageMaker including
+      versions of Lorem Ipsum.
+    </blockquote>
+    <hr />
+    <br />
+    <hr />
+    <h3>Pre tag usage</h3>
+    <pre>
     function savetheLocal(){
         var second = document.getElementBy("second");
         var thevalue = second.value;
         localStorage.setItem(1, thevalue);
         gettheLocal();
     }
-</pre>
+    </pre>
+    <hr />
+    <br />
+    <hr />
+    <h3>Text Emphasis</h3>
+    <p>
+      <mark
+        ><strong><i>Lorem Ipsum</i></strong></mark
+      >
+      is simply dummy text of the printing and typesetting industry. <b>Lorem Ipsum</b> has been the
+      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+      type and scrambled it to make a type specimen book. It has survived not only five centuries,
+      but also the leap into electronic typesetting, remaining essentially unchanged. It was
+      popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker including versions of
+      Lorem Ipsum.
+    </p>
+    <hr />
+    <br />
+    <hr />
+    <h3>List</h3>
+    <ul>
+      <li>Tel) 02-123-4567</li>
+      <li>phone) 010-1234-5678</li>
+    </ul>
 
-<h3>Text Emphasis</h3>
-<p>
-  <mark
-    ><strong><i>Lorem Ipsum</i></strong></mark
-  >
-  is simply dummy text of the printing and typesetting industry. <b>Lorem Ipsum</b> has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-  the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-  1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-  desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
+    <ol>
+      <li>number 1</li>
+      <li>number 2</li>
+      <li>number 3</li>
+      <li>number 4</li>
+    </ol>
 
-<ul>
-  <li>Tel) 02-123-4567</li>
-  <li>phone) 010-1234-5678</li>
-</ul>
+    <ol type="A" start="10">
+      <li>number 10</li>
+      <li>number 11</li>
+      <li>number 12</li>
+    </ol>
 
-<ol>
-  <li>number 1</li>
-  <li>number 2</li>
-  <li>number 3</li>
-  <li>number 4</li>
-</ol>
-
-<ol type="A" start="10">
-  <li>number 10</li>
-  <li>number 11</li>
-  <li>number 12</li>
-</ol>
-
-<dl>
-  <dt>HTML Tags</dt>
-  <dd>h1 ~ h6</dd>
-  <dd>img</dd>
-  <dd>ul</dd>
-  <dd>ol</dd>
-</dl>
-
-<table>
-  <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-  </tr>
-  <tr>
-    <td>hello</td>
-    <td>HTML</td>
-    <td>CSS</td>
-  </tr>
-</table>
+    <dl>
+      <dt>HTML Tags</dt>
+      <dd>h1 ~ h6</dd>
+      <dd>img</dd>
+      <dd>ul</dd>
+      <dd>ol</dd>
+    </dl>
+    <hr />
+    <br />
+    <hr />
+    <table>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+      </tr>
+      <tr>
+        <td>hello</td>
+        <td>HTML</td>
+        <td>CSS</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <caption>
+        caption 태그는 가운데 정렬이 되는 태그입니다.
+      </caption>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+      </tr>
+      <tr>
+        <td>hello</td>
+        <td>HTML</td>
+        <td>CSS</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <hr />
+    <table>
+      <caption>
+        Colgroup Practice
+      </caption>
+      <colgroup>
+        <col />
+        <col span="2" style="background-color: blue" />
+        <col style="background-color: yellow" ; />
+      </colgroup>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>hello</td>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>JS</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+  </body>
+</html>

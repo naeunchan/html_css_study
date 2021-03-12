@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+caption {
+  border: 1px solid black;
+}
+
+hr {
+  border: 1px solid #8888ff;
+}
